@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kalkulator"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KALKULATOR"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_margin="15dp"/>
+
+    <EditText
+        android:id="@+id/txtAngkaPertama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="angka pertama"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/txtAngkaKedua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="angka kedua"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_margin="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/btnTambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="40dp"
+            android:layout_margin="13dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnKurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="40dp"
+            android:layout_margin="13dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnKali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:textSize="40dp"
+            android:layout_margin="13dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnBagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="40dp"
+            android:layout_margin="13dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
